@@ -1,0 +1,147 @@
+/*Start Globale Rules */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #674bb1;
+  background-image: url(../images/bg-desktop.svg);
+}
+@media (max-width: 767px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-size: cover;
+  }
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Globale Rules */
+/* Start Header */
+header {
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+header .logo {
+  width: 200px;
+}
+header .logo img {
+  width: 100%;
+}
+/* End Header */
+
+/* Start Main */
+main .container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  main .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+main .container .image {
+  flex-basis: 100%;
+}
+main .container .image img {
+  width: 100%;
+}
+main .container .info {
+  flex-basis: 100%;
+  padding: 50px;
+  color: #fff;
+}
+main .container .info h1 {
+  font-weight: bold;
+  max-width: 400px;
+}
+main .container .info p {
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+main .container .info a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: #674bb1;
+  padding: 15px 60px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0px 1px 5px rgb(95, 95, 95);
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  main .container .info a {
+    margin: 30px auto;
+  }
+}
+main .container .info a:hover {
+  background-color: #e980e7;
+  color: #fff;
+  box-shadow: 0px 1.5px 10px rgb(65, 65, 65);
+}
+/* End Main */
+
+/* Start Footer */
+footer {
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  footer {
+    padding-bottom: 30px;
+  }
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  footer .container {
+    justify-content: center;
+  }
+}
+footer i {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 20px;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+footer i:first-of-type {
+  padding: 10px 14px;
+}
+footer i:hover {
+  cursor: pointer;
+  color: #e980e7;
+}
+/* End Footer */
